@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!--B class bean creation-->
+	<bean id="classB" class="com.bmpl.InjectLiteralValue.B"></bean>
+	
+	<!--A class bean creation and set reference of B into A property-->
+	<bean id="classA" class="com.bmpl.InjectLiteralValue.A">
+		<property name="name" value="Vinish"/>
+		<property name="dob" value="25-Oct-1992"/>
+		<property name="phone" value="0123456789"/>
+		<property name="email" value="Vinish@gmail.com"/>
+	</bean>
+	
+</beans>
+
+
+
+ 
+
